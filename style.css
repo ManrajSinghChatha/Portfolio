@@ -1,48 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #0d1117;
+    background: radial-gradient(circle at top left, #1f2937, #0d1117 45%);
     color: white;
     font-family: Arial, sans-serif;
     margin: 0;
 }
 
 .container {
-    max-width: 900px;
+    max-width: 950px;
     margin: 80px auto;
     padding: 20px;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 50px;
 }
 
 p {
     color: #c9d1d9;
-    line-height: 1.6;
+    line-height: 1.7;
+    font-size: 1.05rem;
 }
 
 .buttons {
-    margin: 30px 0;
+    margin: 35px 0;
 }
 
-.buttons a {
+.buttons a,
+.project a {
     display: inline-block;
     text-decoration: none;
     color: white;
     border: 1px solid #30363d;
     padding: 12px 20px;
     margin-right: 10px;
-    border-radius: 8px;
-    transition: 0.2s;
+    border-radius: 10px;
+    transition: 0.2s ease;
 }
 
-.buttons a:hover {
+.buttons a:hover,
+.project a:hover {
     background-color: #238636;
+    transform: translateY(-2px);
 }
 
 .project {
-    background: #161b22;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
+    background: rgba(22, 27, 34, 0.92);
+    padding: 28px;
+    margin-top: 24px;
+    border-radius: 16px;
+    border: 1px solid #30363d;
+    transition: 0.2s ease;
+}
+
+.project:hover {
+    transform: translateY(-4px);
+    border-color: #58a6ff;
+}
+
+.project h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+}
+
+@media (max-width: 700px) {
+    .container {
+        margin: 40px auto;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    .buttons a {
+        margin-bottom: 10px;
+    }
 }
