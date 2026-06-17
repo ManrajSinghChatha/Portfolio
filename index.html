@@ -8,56 +8,74 @@
 </head>
 <body>
 
-    <div class="container">
-        <h1>Manraj Chatha</h1>
+    <main class="container">
 
-        <p>
-            Computer Science student at UTSA interested in software engineering,
-            backend development, databases, and systems programming.
-        </p>
+        <section class="hero">
+            <p class="tagline">Computer Science Student • UTSA</p>
 
-        <div class="buttons">
-            <a href="https://github.com/ManrajSinghChatha" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/manrajchatha/" target="_blank">LinkedIn</a>
-        </div>
+            <h1>Manraj Chatha</h1>
 
-        <h2>Skills</h2>
-
-        <div class="project">
-            <p>
-                Java • Python • C • JavaScript • Node.js • Express • PostgreSQL • Git • Linux
-            </p>
-        </div>
-
-        <h2>Projects</h2>
-
-        <div class="project">
-            <h3>LiftSync</h3>
-
-            <p>
-                REST API built with Node.js, Express, and PostgreSQL.
-                Supports workout storage, retrieval, and database integration.
+            <p class="intro">
+                I'm a Computer Science student interested in software engineering,
+                backend development, databases, and systems programming.
             </p>
 
-            <a href="https://github.com/ManrajSinghChatha/liftsync" target="_blank">
-                View Repository →
-            </a>
-        </div>
+            <div class="buttons">
+                <a href="#projects">View Projects</a>
+                <a href="https://github.com/ManrajSinghChatha" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/manrajchatha/" target="_blank">LinkedIn</a>
+            </div>
+        </section>
 
-        <div class="project">
-            <h3>Unix Shell</h3>
+        <section>
+            <h2>Skills</h2>
 
-            <p>
-                Unix command-line shell written in C demonstrating process creation,
-                command execution, and management using fork(), execvp(), and waitpid().
-            </p>
+            <div class="skills">
+                <span>Java</span>
+                <span>Python</span>
+                <span>C</span>
+                <span>JavaScript</span>
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>PostgreSQL</span>
+                <span>Git</span>
+                <span>Linux</span>
+            </div>
+        </section>
 
-            <a href="https://github.com/ManrajSinghChatha/unix-shell" target="_blank">
-                View Repository →
-            </a>
-        </div>
+        <section id="projects">
+            <h2>Projects</h2>
 
-    </div>
+            <div class="project-grid">
+                <div class="project">
+                    <h3>LiftSync</h3>
+
+                    <p>
+                        Backend system for a workout tracker that stores exercises,
+                        sets, reps, and workout data in a PostgreSQL database.
+                    </p>
+
+                    <a href="https://github.com/ManrajSinghChatha/liftsync" target="_blank">
+                        View Repository →
+                    </a>
+                </div>
+
+                <div class="project">
+                    <h3>Unix Shell</h3>
+
+                    <p>
+                        Custom Unix shell written in C that can run commands and manage
+                        processes similar to a Linux terminal.
+                    </p>
+
+                    <a href="https://github.com/ManrajSinghChatha/unix-shell" target="_blank">
+                        View Repository →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
 </body>
 </html>
