@@ -3,34 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manraj Chatha</title>
+    <title>Manraj Chatha | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <main class="container">
+    <nav class="navbar">
+        <div class="nav-logo">MC</div>
+
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="https://github.com/ManrajSinghChatha" target="_blank">GitHub</a>
+        </div>
+    </nav>
+
+    <main>
 
         <section class="hero">
-            <p class="tagline">Computer Science Student • UTSA</p>
+            <div class="hero-text">
+                <p class="eyebrow">Computer Science Student • UTSA</p>
 
-            <h1>Manraj Chatha</h1>
+                <h1>Manraj Chatha</h1>
 
-            <p class="intro">
-                I'm a Computer Science student interested in software engineering,
-                backend development, databases, and systems programming.
-            </p>
+                <p class="hero-subtitle">
+                    I’m a Computer Science student building projects in backend development,
+                    databases, Linux systems, and software engineering.
+                </p>
 
-            <div class="buttons">
-                <a href="#projects">View Projects</a>
-                <a href="https://github.com/ManrajSinghChatha" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/manrajchatha/" target="_blank">LinkedIn</a>
+                <div class="hero-buttons">
+                    <a class="btn primary" href="#projects">View Projects</a>
+                    <a class="btn" href="https://github.com/ManrajSinghChatha" target="_blank">GitHub</a>
+                    <a class="btn" href="https://www.linkedin.com/in/manrajchatha/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <div class="avatar">MC</div>
+                <p class="card-label">Currently Building</p>
+                <h3>LiftSync</h3>
+                <p>
+                    A workout tracking backend using Node.js, Express, and PostgreSQL.
+                </p>
             </div>
         </section>
 
-        <section>
-            <h2>Skills</h2>
+        <section id="about" class="section">
+            <p class="section-label">About Me</p>
+            <h2>Focused on becoming a stronger software developer.</h2>
 
-            <div class="skills">
+            <p class="about-text">
+                I’m a Computer Science student at the University of Texas at San Antonio.
+                My current focus is building practical projects that strengthen my understanding
+                of backend systems, databases, operating systems, and real-world software development.
+            </p>
+
+            <p class="about-text">
+                I’m especially interested in projects that connect code with something useful:
+                storing data, creating APIs, working with Linux concepts, and building applications
+                that can grow over time.
+            </p>
+        </section>
+
+        <section id="projects" class="section">
+            <p class="section-label">Featured Work</p>
+            <h2>Projects</h2>
+
+            <div class="project-grid">
+
+                <article class="project-card">
+                    <div class="project-top">
+                        <h3>LiftSync</h3>
+                        <span>Backend</span>
+                    </div>
+
+                    <p>
+                        Backend system for a workout tracker that stores exercises, sets, reps,
+                        and workout data in a PostgreSQL database.
+                    </p>
+
+                    <div class="tech-list">
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>PostgreSQL</span>
+                    </div>
+
+                    <a class="project-link" href="https://github.com/ManrajSinghChatha/liftsync" target="_blank">
+                        View Repository →
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-top">
+                        <h3>Unix Shell</h3>
+                        <span>C / Linux</span>
+                    </div>
+
+                    <p>
+                        Custom Unix shell written in C that can run commands and manage processes
+                        similar to a Linux terminal.
+                    </p>
+
+                    <div class="tech-list">
+                        <span>C</span>
+                        <span>Linux</span>
+                        <span>Unix Processes</span>
+                    </div>
+
+                    <a class="project-link" href="https://github.com/ManrajSinghChatha/unix-shell" target="_blank">
+                        View Repository →
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <p class="section-label">Technical Skills</p>
+            <h2>Technologies I’m working with</h2>
+
+            <div class="skills-grid">
                 <span>Java</span>
                 <span>Python</span>
                 <span>C</span>
@@ -43,35 +136,15 @@
             </div>
         </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
+        <section class="contact-section">
+            <h2>Let’s connect.</h2>
+            <p>
+                I’m continuing to build projects, improve my GitHub, and grow as a Computer Science student.
+            </p>
 
-            <div class="project-grid">
-                <div class="project">
-                    <h3>LiftSync</h3>
-
-                    <p>
-                        Backend system for a workout tracker that stores exercises,
-                        sets, reps, and workout data in a PostgreSQL database.
-                    </p>
-
-                    <a href="https://github.com/ManrajSinghChatha/liftsync" target="_blank">
-                        View Repository →
-                    </a>
-                </div>
-
-                <div class="project">
-                    <h3>Unix Shell</h3>
-
-                    <p>
-                        Custom Unix shell written in C that can run commands and manage
-                        processes similar to a Linux terminal.
-                    </p>
-
-                    <a href="https://github.com/ManrajSinghChatha/unix-shell" target="_blank">
-                        View Repository →
-                    </a>
-                </div>
+            <div class="hero-buttons">
+                <a class="btn primary" href="https://github.com/ManrajSinghChatha" target="_blank">GitHub</a>
+                <a class="btn" href="https://www.linkedin.com/in/manrajchatha/" target="_blank">LinkedIn</a>
             </div>
         </section>
 
