@@ -1,8 +1,9 @@
+```css
 :root {
-    --bg: #080c14;
-    --bg-soft: #101722;
-    --card: rgba(18, 27, 41, 0.82);
-    --border: rgba(255, 255, 255, 0.1);
+    --bg: #070b12;
+    --card: rgba(16, 24, 39, 0.82);
+    --card-strong: rgba(22, 32, 50, 0.95);
+    --border: rgba(255, 255, 255, 0.12);
     --text: #f8fafc;
     --muted: #a8b3c7;
     --blue: #58a6ff;
@@ -22,12 +23,14 @@ html {
 
 body {
     min-height: 100vh;
-    background:
-        radial-gradient(circle at 20% 10%, rgba(88, 166, 255, 0.16), transparent 32%),
-        radial-gradient(circle at 80% 0%, rgba(249, 115, 22, 0.14), transparent 28%),
-        linear-gradient(135deg, #080c14 0%, #0d1117 55%, #05070b 100%);
     color: var(--text);
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    background:
+        radial-gradient(circle at 15% 8%, rgba(88, 166, 255, 0.22), transparent 30%),
+        radial-gradient(circle at 85% 5%, rgba(249, 115, 22, 0.18), transparent 28%),
+        radial-gradient(circle at 50% 80%, rgba(63, 185, 80, 0.10), transparent 35%),
+        linear-gradient(135deg, #070b12 0%, #0d1117 55%, #05070b 100%);
+    overflow-x: hidden;
 }
 
 body::before {
@@ -35,11 +38,12 @@ body::before {
     position: fixed;
     inset: 0;
     background-image:
-        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
-    background-size: 44px 44px;
-    mask-image: linear-gradient(to bottom, black, transparent 80%);
+        linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+    background-size: 46px 46px;
+    mask-image: linear-gradient(to bottom, black, transparent 85%);
     pointer-events: none;
+    z-index: 0;
 }
 
 .navbar {
@@ -54,20 +58,22 @@ body::before {
 }
 
 .nav-logo {
-    width: 44px;
-    height: 44px;
-    border-radius: 14px;
+    width: 46px;
+    height: 46px;
+    border-radius: 15px;
     display: grid;
     place-items: center;
     background: linear-gradient(135deg, var(--blue), var(--green));
     color: white;
-    font-weight: 800;
-    box-shadow: 0 0 40px rgba(88, 166, 255, 0.25);
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    box-shadow: 0 0 45px rgba(88, 166, 255, 0.32);
 }
 
 .nav-links {
     display: flex;
-    gap: 22px;
+    gap: 24px;
+    align-items: center;
 }
 
 .nav-links a {
@@ -91,16 +97,17 @@ main {
 .hero {
     min-height: 78vh;
     display: grid;
-    grid-template-columns: 1.25fr 0.75fr;
-    gap: 50px;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 58px;
     align-items: center;
+    padding: 30px 0 70px;
 }
 
 .eyebrow,
 .section-label,
 .card-label {
     color: var(--blue);
-    font-weight: 700;
+    font-weight: 800;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     font-size: 0.85rem;
@@ -108,10 +115,10 @@ main {
 }
 
 h1 {
-    font-size: clamp(3.4rem, 8vw, 6.8rem);
-    line-height: 0.95;
-    letter-spacing: -0.06em;
-    margin-bottom: 24px;
+    font-size: clamp(3.5rem, 8vw, 6.9rem);
+    line-height: 0.92;
+    letter-spacing: -0.07em;
+    margin-bottom: 26px;
 }
 
 .hero-subtitle {
@@ -125,7 +132,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     gap: 14px;
-    margin-top: 34px;
+    margin-top: 36px;
 }
 
 .btn {
@@ -138,73 +145,97 @@ h1 {
     border: 1px solid var(--border);
     color: var(--text);
     text-decoration: none;
-    background: rgba(255,255,255,0.04);
+    background: rgba(255, 255, 255, 0.045);
     transition: 0.22s ease;
 }
 
 .btn:hover {
     transform: translateY(-3px);
-    border-color: rgba(88, 166, 255, 0.55);
-    background: rgba(88, 166, 255, 0.1);
+    border-color: rgba(88, 166, 255, 0.6);
+    background: rgba(88, 166, 255, 0.12);
 }
 
 .btn.primary {
     background: linear-gradient(135deg, var(--blue), #2563eb);
     border: none;
-    box-shadow: 0 12px 35px rgba(37, 99, 235, 0.28);
+    box-shadow: 0 14px 38px rgba(37, 99, 235, 0.35);
 }
 
 .hero-card {
     border: 1px solid var(--border);
     background:
-        linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03)),
+        linear-gradient(180deg, rgba(255,255,255,0.09), rgba(255,255,255,0.03)),
         var(--card);
-    backdrop-filter: blur(14px);
-    border-radius: 28px;
-    padding: 34px;
-    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(16px);
+    border-radius: 30px;
+    padding: 32px;
+    box-shadow: 0 28px 90px rgba(0, 0, 0, 0.42);
+    position: relative;
+    overflow: hidden;
 }
 
-.avatar {
-    width: 120px;
-    height: 120px;
-    border-radius: 32px;
-    display: grid;
-    place-items: center;
+.hero-card::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    background: radial-gradient(circle at top right, rgba(88, 166, 255, 0.18), transparent 38%);
+    pointer-events: none;
+}
+
+.photo-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 310px;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 24px;
+    display: block;
     margin-bottom: 28px;
-    font-size: 2.4rem;
-    font-weight: 900;
-    background:
-        radial-gradient(circle at 30% 20%, rgba(255,255,255,0.55), transparent 18%),
-        linear-gradient(135deg, var(--orange), var(--blue));
-    box-shadow: 0 0 60px rgba(88, 166, 255, 0.25);
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow:
+        0 22px 60px rgba(0, 0, 0, 0.45),
+        0 0 55px rgba(88, 166, 255, 0.13);
+    position: relative;
+    z-index: 1;
+}
+
+.hero-card h3,
+.hero-card p {
+    position: relative;
+    z-index: 1;
 }
 
 .hero-card h3 {
-    font-size: 1.7rem;
+    font-size: 1.75rem;
     margin-bottom: 12px;
 }
 
 .hero-card p {
     color: var(--muted);
-    line-height: 1.7;
+    line-height: 1.75;
 }
 
 .section {
-    padding: 86px 0 20px;
+    padding: 88px 0 20px;
 }
 
 h2 {
-    font-size: clamp(2rem, 4vw, 3.2rem);
-    letter-spacing: -0.04em;
+    font-size: clamp(2.05rem, 4vw, 3.25rem);
+    letter-spacing: -0.045em;
     margin-bottom: 24px;
 }
 
 .about-text {
-    max-width: 850px;
+    max-width: 880px;
     color: var(--muted);
     font-size: 1.1rem;
-    line-height: 1.85;
+    line-height: 1.9;
     margin-bottom: 18px;
 }
 
@@ -215,11 +246,13 @@ h2 {
 }
 
 .project-card {
-    min-height: 330px;
+    min-height: 335px;
     border: 1px solid var(--border);
-    background: var(--card);
-    border-radius: 24px;
-    padding: 30px;
+    background:
+        linear-gradient(180deg, rgba(255,255,255,0.055), rgba(255,255,255,0.025)),
+        var(--card);
+    border-radius: 26px;
+    padding: 31px;
     display: flex;
     flex-direction: column;
     transition: 0.24s ease;
@@ -231,15 +264,15 @@ h2 {
     content: "";
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at top right, rgba(88, 166, 255, 0.16), transparent 32%);
+    background: radial-gradient(circle at top right, rgba(88, 166, 255, 0.18), transparent 35%);
     opacity: 0;
     transition: 0.24s ease;
 }
 
 .project-card:hover {
     transform: translateY(-8px);
-    border-color: rgba(88, 166, 255, 0.45);
-    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.3);
+    border-color: rgba(88, 166, 255, 0.5);
+    box-shadow: 0 26px 76px rgba(0, 0, 0, 0.34);
 }
 
 .project-card:hover::before {
@@ -263,13 +296,13 @@ h2 {
 }
 
 .project-top h3 {
-    font-size: 1.65rem;
+    font-size: 1.7rem;
 }
 
 .project-top span {
     color: var(--blue);
-    border: 1px solid rgba(88, 166, 255, 0.28);
-    background: rgba(88, 166, 255, 0.08);
+    border: 1px solid rgba(88, 166, 255, 0.3);
+    background: rgba(88, 166, 255, 0.09);
     padding: 7px 12px;
     border-radius: 999px;
     font-size: 0.85rem;
@@ -278,7 +311,7 @@ h2 {
 
 .project-card p {
     color: var(--muted);
-    line-height: 1.8;
+    line-height: 1.85;
     margin-bottom: 24px;
 }
 
@@ -294,7 +327,7 @@ h2 {
 .skills-grid span {
     border: 1px solid var(--border);
     color: #dbeafe;
-    background: rgba(255, 255, 255, 0.04);
+    background: rgba(255, 255, 255, 0.055);
     padding: 9px 13px;
     border-radius: 999px;
     font-size: 0.92rem;
@@ -305,6 +338,7 @@ h2 {
     color: var(--blue);
     font-weight: 800;
     text-decoration: none;
+    transition: 0.2s ease;
 }
 
 .project-link:hover {
@@ -315,7 +349,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
-    max-width: 850px;
+    max-width: 880px;
 }
 
 .skills-grid span {
@@ -323,38 +357,53 @@ h2 {
 }
 
 .contact-section {
-    margin: 95px 0 70px;
-    padding: 42px;
-    border-radius: 28px;
+    margin: 98px 0 74px;
+    padding: 44px;
+    border-radius: 30px;
     border: 1px solid var(--border);
     background:
-        radial-gradient(circle at top left, rgba(63, 185, 80, 0.13), transparent 35%),
-        rgba(255, 255, 255, 0.04);
+        radial-gradient(circle at top left, rgba(63, 185, 80, 0.15), transparent 35%),
+        rgba(255, 255, 255, 0.05);
+    box-shadow: 0 22px 70px rgba(0, 0, 0, 0.23);
 }
 
 .contact-section p {
     color: var(--muted);
-    line-height: 1.8;
+    line-height: 1.85;
     max-width: 720px;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
     .hero {
         grid-template-columns: 1fr;
         min-height: auto;
-        padding: 70px 0 40px;
+        padding: 60px 0 45px;
+    }
+
+    .hero-card {
+        max-width: 420px;
     }
 
     .project-grid {
         grid-template-columns: 1fr;
     }
+}
 
+@media (max-width: 700px) {
     .nav-links {
         display: none;
     }
 
-    .hero-card {
-        max-width: 420px;
+    h1 {
+        font-size: clamp(3rem, 16vw, 4.2rem);
+    }
+
+    .hero-subtitle {
+        font-size: 1.08rem;
+    }
+
+    .profile-photo {
+        max-width: 260px;
     }
 }
 
@@ -365,7 +414,7 @@ h2 {
     }
 
     .hero {
-        padding-top: 45px;
+        padding-top: 42px;
     }
 
     .hero-buttons {
@@ -376,7 +425,10 @@ h2 {
         width: 100%;
     }
 
+    .hero-card,
+    .project-card,
     .contact-section {
-        padding: 28px;
+        padding: 26px;
     }
 }
+```
