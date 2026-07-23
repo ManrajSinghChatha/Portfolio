@@ -1,7 +1,7 @@
 # Manraj Chatha — Portfolio
 
-A responsive personal portfolio showcasing full-stack, backend, and systems
-projects.
+A responsive personal portfolio for Manraj Chatha, a Computer Science student
+at UTSA and aspiring software engineer.
 
 ## Featured work
 
