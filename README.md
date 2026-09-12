@@ -1,13 +1,19 @@
 # Manraj Chatha — Portfolio
 
 A responsive personal portfolio for Manraj Chatha, a Computer Science student
-at UTSA and aspiring software engineer.
+at UTSA graduating Spring 2027. The site highlights a strong foundation in
+Python, data structures, algorithms, debugging, and problem solving alongside
+broader software engineering interests.
 
 ## Featured work
 
-- [Next Play Launch Board](https://next-play-launch-board.vercel.app)
+- [RepoMedic](https://github.com/ManrajSinghChatha/repomedic)
 - [LiftSync](https://github.com/ManrajSinghChatha/liftsync)
-- [Unix Shell](https://github.com/ManrajSinghChatha/unix-shell)
+- Cyber Heist: Night Protocol — a Godot/GDScript coursework project
+
+The portfolio also includes an about section covering Manraj's Graphic Design
+& UX/UI internship with Tomorrow's Leaders Today, a curated reading section,
+and skills grouped by core strengths, project exposure, and coursework.
 
 ## Run locally
 
