@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#080a0f">
+  <meta name="theme-color" content="#f4f1ea">
   <meta name="description" content="Portfolio of Manraj Chatha, a Computer Science student at UTSA focused on software engineering, Python, data structures, algorithms, and problem solving.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Manraj Chatha | Computer Science Student">
@@ -32,7 +32,10 @@
     <div class="nav-shell">
       <a class="brand" href="#top" aria-label="Manraj Chatha, back to top">MC<span aria-hidden="true">.</span></a>
       <nav aria-label="Primary navigation">
-        <a href="#work">Work</a><a href="#about">About</a><a href="#reading">Reading</a><a href="#skills">Skills</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#reading">Reading</a>
+        <a href="#skills">Skills</a>
       </nav>
       <a class="nav-cta" href="https://www.linkedin.com/in/manrajchatha/" target="_blank" rel="noreferrer">Let's connect <span aria-hidden="true">↗</span></a>
     </div>
@@ -41,40 +44,43 @@
   <main id="main-content">
     <section class="hero section-shell" id="top" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow"><span></span> Computer Science @ UTSA · Spring 2027</p>
-        <h1 id="hero-title">Hi, I'm Manraj. <span>Software engineering, Python,</span> and problem solving.</h1>
-        <p class="hero-lede">I'm a Computer Science student at UTSA. I build projects, work through algorithms, and care about understanding how software works—not just getting it to run.</p>
+        <p class="eyebrow"><span></span> Computer Science at UTSA · Spring 2027</p>
+        <h1 id="hero-title">Hi, I'm Manraj. <span>Computer Science student focused on software engineering, Python, and problem solving.</span></h1>
+        <p class="hero-lede">I build projects, work through algorithms, and care about understanding how software works—not just getting it to run.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#work">See my projects <span aria-hidden="true">↓</span></a>
+          <a class="button button-primary" href="#work">View my projects <span aria-hidden="true">↓</span></a>
           <a class="button button-secondary" href="https://github.com/ManrajSinghChatha" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
         </div>
         <ul class="focus-list" aria-label="Primary technical focus">
-          <li><span>01</span> Python</li><li><span>02</span> Data Structures &amp; Algorithms</li><li><span>03</span> Software Engineering</li>
+          <li>Python</li>
+          <li>Data Structures &amp; Algorithms</li>
+          <li>Software Engineering</li>
         </ul>
       </div>
       <div class="portrait-wrap" aria-label="Portrait of Manraj Chatha">
-        <div class="portrait-glow" aria-hidden="true"></div>
         <div class="portrait-frame">
           <img src="Manraj-headshot.webp" alt="Manraj Chatha in a dark quarter-zip sweater" width="800" height="1000">
-          <div class="portrait-caption"><span class="status-dot" aria-hidden="true"></span><span><small>Currently</small>CS student · Graphic Design &amp; UX/UI Intern</span></div>
+          <div class="portrait-caption">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span><small>Currently</small>CS student · Graphic Design &amp; UX/UI Intern</span>
+          </div>
         </div>
-        <span class="portrait-index" aria-hidden="true">/ 2027</span>
       </div>
     </section>
 
     <section class="work-section section-shell" id="work" aria-labelledby="work-title">
       <div class="section-heading" data-reveal>
-        <div><p class="section-kicker">01 / Selected work</p><h2 id="work-title">Projects that taught me something.</h2></div>
-        <p>Three projects across code search, web APIs, and game development—each chosen for the problem it helped me understand.</p>
+        <p class="section-label">Work</p>
+        <h2 id="work-title">Selected Projects</h2>
       </div>
       <article class="featured-project" data-reveal>
         <div class="project-visual repo-visual" aria-hidden="true">
           <div class="repo-window">
             <div class="window-bar"><span></span><span></span><span></span><p>repomedic / main.py</p></div>
             <div class="repo-layout">
-              <div class="file-tree"><p>REPOSITORY</p><span>▾ helpers</span><span>&nbsp;&nbsp;validation.py</span><span class="is-active">main.py</span><span>workout_helpers.py</span><span>workout_routes.js</span></div>
+              <div class="file-tree"><p>FILES</p><span>helpers/</span><span>&nbsp;&nbsp;validation.py</span><span class="is-active">main.py</span><span>workout_helpers.py</span></div>
               <div class="search-output">
-                <p><b>$</b> python main.py</p><p>Enter a word to search for: <em>workout</em></p>
+                <p><b>$</b> python main.py</p><p>Search for: <em>workout</em></p>
                 <div class="match-line"><small>workout_helpers.py · line 1</small><span>def calculate_<mark>workout</mark>_volume(...)</span></div>
                 <div class="match-line"><small>workout_routes.js · line 3</small><span>const <mark>workout</mark>s = [];</span></div>
                 <p class="search-status">2 matches across 2 files</p>
@@ -83,25 +89,28 @@
           </div>
         </div>
         <div class="featured-copy">
-          <div class="project-meta"><span>Python utility</span><span>01</span></div>
+          <p class="project-type">Python utility</p>
           <h3>RepoMedic</h3>
           <p>A Python code-search utility that recursively scans source files for a keyword and reports matching file paths, line numbers, and source lines.</p>
           <ul class="project-points"><li>Walks nested directories and finds Python and JavaScript files</li><li>Performs case-insensitive matching with useful source context</li><li>Handles operating-system and text-decoding errors</li></ul>
           <div class="tech-row" aria-label="Concepts used"><span>Python</span><span>File I/O</span><span>Directory traversal</span><span>Text processing</span></div>
-          <div class="project-links"><a href="https://github.com/ManrajSinghChatha/repomedic" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a></div>
+          <a class="text-link" href="https://github.com/ManrajSinghChatha/repomedic" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a>
         </div>
       </article>
 
       <div class="project-grid">
         <article class="project-card" data-reveal>
           <div class="project-preview api-preview" aria-hidden="true">
-            <div class="preview-label">REQUEST / RESPONSE</div>
-            <div class="api-route"><span class="method get">GET</span><code>/workouts</code><small>200 OK</small></div>
-            <div class="api-flow"><span>Express route</span><i>→</i><span>PostgreSQL</span><i>→</i><span>JSON response</span></div>
-            <div class="api-route"><span class="method post">POST</span><code>/workouts</code><small>new row</small></div>
+            <div class="api-panel">
+              <div class="panel-title"><span></span> API request</div>
+              <div class="api-route"><span class="method get">GET</span><code>/workouts</code><small>200 OK</small></div>
+              <div class="response-box"><small>Response</small><code>{ "workouts": [ ... ] }</code></div>
+              <div class="api-route"><span class="method post">POST</span><code>/workouts</code><small>Created</small></div>
+            </div>
           </div>
           <div class="card-copy">
-            <div class="project-meta"><span>REST API study</span><span>02</span></div><h3>LiftSync</h3>
+            <p class="project-type">REST API study</p>
+            <h3>LiftSync</h3>
             <p>A workout-tracking REST API built with Node.js, Express, and PostgreSQL. I used it to study routing, request/response flow, persistence, and how an application communicates with a relational database.</p>
             <div class="tech-row" aria-label="Project technologies"><span>REST APIs</span><span>Node.js / Express</span><span>PostgreSQL</span></div>
             <a class="text-link" href="https://github.com/ManrajSinghChatha/liftsync" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a>
@@ -110,12 +119,15 @@
 
         <article class="project-card" data-reveal>
           <div class="project-preview game-preview" aria-hidden="true">
-            <div class="preview-label">NIGHT PROTOCOL / MISSION 01</div>
-            <div class="game-board"><span class="room room-a"></span><span class="room room-b"></span><span class="terminal terminal-a">T</span><span class="terminal terminal-b">T</span><span class="guard guard-a"></span><span class="guard guard-b"></span><span class="player-marker">M</span><span class="exit-marker">EXIT</span></div>
-            <div class="mission-strip"><span>OBJECTIVE</span><b>Hack both secure terminals: 1/2</b></div>
+            <div class="game-panel">
+              <div class="game-header"><span>Night Protocol</span><small>Mission 01</small></div>
+              <div class="game-board"><span class="room room-a"></span><span class="room room-b"></span><span class="terminal terminal-a">T</span><span class="terminal terminal-b">T</span><span class="guard guard-a"></span><span class="guard guard-b"></span><span class="player-marker">M</span><span class="exit-marker">EXIT</span></div>
+              <div class="mission-strip"><span>Objective</span><b>Hack terminals: 1/2</b></div>
+            </div>
           </div>
           <div class="card-copy">
-            <div class="project-meta"><span>Coursework / 2D game</span><span>03</span></div><h3>Cyber Heist:<br>Night Protocol</h3>
+            <p class="project-type">Coursework · 2D game</p>
+            <h3>Cyber Heist: Night Protocol</h3>
             <p>A 2D top-down stealth game built in Godot with GDScript for coursework. It combines player movement, collision-based interactions, terminal hacking, HUD updates, and objective-driven mission progression.</p>
             <div class="tech-row" aria-label="Project technologies"><span>Godot</span><span>GDScript</span><span>Game logic</span><span>UI state</span></div>
             <p class="project-note">Coursework project · local development build</p>
@@ -125,7 +137,7 @@
     </section>
 
     <section class="about-section section-shell" id="about" aria-labelledby="about-title">
-      <div class="about-intro" data-reveal><p class="section-kicker">02 / About</p><h2 id="about-title">Technical curiosity, with a designer's eye.</h2></div>
+      <div class="about-intro" data-reveal><p class="section-label">Background</p><h2 id="about-title">About</h2></div>
       <div class="about-copy" data-reveal>
         <p class="about-lede">I'm a Computer Science student at UTSA graduating Spring 2027. My strongest foundation is in Python, data structures, algorithms, debugging, and problem solving.</p>
         <p>I'm broadly interested in software engineering and technical roles. Coursework and projects have exposed me to APIs, relational databases, operating systems, software engineering, and game development. I care about understanding what I build rather than collecting technologies.</p>
@@ -135,33 +147,33 @@
     </section>
 
     <section class="reading-section section-shell" id="reading" aria-labelledby="reading-title">
-      <div class="section-heading" data-reveal>
-        <div><p class="section-kicker">03 / Currently reading</p><h2 id="reading-title">Ideas I'm spending time with.</h2></div>
-        <p>Two books shaping how I think—one about inner practice, one about technical problem solving.</p>
-      </div>
+      <div class="section-heading" data-reveal><p class="section-label">On my bookshelf</p><h2 id="reading-title">Currently Reading</h2></div>
       <div class="reading-grid">
-        <article class="book-card book-spiritual" data-reveal><div class="book-number">01</div><div><p class="book-status">In progress · Personal</p><h3>Autobiography<br>of a Yogi</h3><p class="book-author">Paramahansa Yogananda</p><p class="book-note">A thoughtful exploration of spirituality, discipline, self-inquiry, and the role of inner practice in personal growth.</p></div></article>
-        <article class="book-card book-technical" data-reveal><div class="book-number">02</div><div><p class="book-status">In progress · Technical</p><h3>Beyond Cracking the<br>Coding Interview</h3><p class="book-author">Problem-solving and interview thinking</p><p class="book-note">I'm using it to study recurring problem-solving patterns, recognize approaches independently, and sharpen my algorithmic reasoning.</p></div></article>
+        <article class="book-card" data-reveal>
+          <div class="book-cover yogi-cover" aria-hidden="true"><span class="cover-rule"></span><small>Paramahansa<br>Yogananda</small><strong>Autobiography<br>of a Yogi</strong><span class="cover-sun"></span></div>
+          <div class="book-copy"><p class="book-category">Personal / Spirituality</p><h3>Autobiography of a Yogi</h3><p class="book-author">Paramahansa Yogananda</p><p class="book-note">Reading it for its perspective on discipline, self-inquiry, and inner growth.</p></div>
+        </article>
+        <article class="book-card" data-reveal>
+          <div class="book-cover coding-cover" aria-hidden="true"><small>Gayle Laakmann McDowell<br>Jackie Bavaro</small><span class="code-mark">{ }</span><strong>Beyond<br>Cracking the<br>Coding Interview</strong><span class="cover-grid"></span></div>
+          <div class="book-copy"><p class="book-category">Technical / Problem Solving</p><h3>Beyond Cracking the Coding Interview</h3><p class="book-author">Gayle Laakmann McDowell &amp; Jackie Bavaro</p><p class="book-note">Working through problem-solving patterns and improving how I recognize approaches independently.</p></div>
+        </article>
       </div>
     </section>
 
     <section class="skills-section section-shell" id="skills" aria-labelledby="skills-title">
-      <div class="section-heading" data-reveal>
-        <div><p class="section-kicker">04 / Skills</p><h2 id="skills-title">What I know, and where I've used it.</h2></div>
-        <p>A clear distinction between my core strengths, hands-on project exposure, and academic context.</p>
-      </div>
+      <div class="section-heading" data-reveal><h2 id="skills-title">Skills</h2></div>
       <div class="skill-groups">
-        <div class="skill-group skill-primary" data-reveal><div class="skill-heading"><span>01</span><p>Strongest today</p></div><ul><li>Python</li><li>Data Structures</li><li>Algorithms</li><li>Debugging</li><li>Problem Solving</li></ul></div>
-        <div class="skill-group" data-reveal><div class="skill-heading"><span>02</span><p>Project exposure</p></div><ul><li>REST APIs</li><li>Relational Databases</li><li>Node.js / Express</li><li>Godot / GDScript</li></ul></div>
-        <div class="skill-group" data-reveal><div class="skill-heading"><span>03</span><p>Coursework &amp; tools</p></div><ul><li>Operating Systems</li><li>Software Engineering</li><li>Git &amp; GitHub</li><li>VS Code</li></ul></div>
+        <div class="skill-group" data-reveal><h3>Core Skills</h3><ul><li>Python</li><li>Data Structures</li><li>Algorithms</li><li>Debugging</li><li>Problem Solving</li></ul></div>
+        <div class="skill-group" data-reveal><h3>Project Technologies</h3><ul><li>REST APIs</li><li>Relational Databases</li><li>Node.js / Express</li><li>Godot / GDScript</li></ul></div>
+        <div class="skill-group" data-reveal><h3>Coursework &amp; Tools</h3><ul><li>Operating Systems</li><li>Software Engineering</li><li>Git &amp; GitHub</li><li>VS Code</li></ul></div>
       </div>
     </section>
 
     <section class="contact-section section-shell" aria-labelledby="contact-title" data-reveal>
-      <p class="section-kicker">05 / Connect</p>
-      <div><h2 id="contact-title">Let's talk about what's next.</h2><p class="contact-copy">I'm looking for software engineering and technical opportunities where I can contribute, learn quickly, and keep developing as an engineer.</p><div class="contact-actions"><a class="button button-primary" href="https://www.linkedin.com/in/manrajchatha/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="https://github.com/ManrajSinghChatha" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a></div></div>
+      <p class="section-label">Get in touch</p>
+      <div><h2 id="contact-title">Contact</h2><p class="contact-copy">I'm looking for software engineering and technical opportunities where I can contribute, learn quickly, and keep developing as an engineer.</p><div class="contact-actions"><a class="button button-primary" href="https://www.linkedin.com/in/manrajchatha/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="https://github.com/ManrajSinghChatha" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a></div></div>
     </section>
   </main>
-  <footer class="site-footer section-shell"><p>Designed and built by Manraj Chatha.</p><p>© <span id="year">2026</span> <span aria-hidden="true">/</span> San Antonio, TX</p></footer>
+  <footer class="site-footer section-shell"><p>Designed and built by Manraj Chatha.</p><p>© <span id="year">2026</span> · San Antonio, TX</p></footer>
 </body>
 </html>
